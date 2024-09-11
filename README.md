@@ -90,7 +90,7 @@ Each service will run on its own port as defined in the .env files.
 
 Service Routes and Postman Examples
 User Service
-Base URL: http://localhost:4000
+Base URL: http://localhost:port
 1. Register a New User
 Endpoint: /users/register
 Method: POST
@@ -113,7 +113,7 @@ Copy code
   "password": "password123"
 }
 Product Service
-Base URL: http://localhost:4001
+Base URL: http://localhost:port
 1. Add a Product
 Endpoint: /products
 Method: POST
@@ -129,7 +129,7 @@ Copy code
 Endpoint: /products
 Method: GET
 Order Service
-Base URL: http://localhost:4002
+Base URL: http://localhost:port
 1. Create an Order
 Endpoint: /orders
 Method: POST
@@ -145,7 +145,7 @@ Copy code
 Endpoint: /orders/:id
 Method: GET
 Payment Service
-Base URL: http://localhost:4003
+Base URL: http://localhost:port
 1. Create a Payment
 Endpoint: /payments
 Method: POST
@@ -166,23 +166,23 @@ bash
 Copy code
 # .env file for User Service
 PORT=4000
-MONGO_URI=mongodb://localhost:27017/usersdb
+MONGO_URI=mongodb://localhost:port/usersdb
 JWT_SECRET=your_jwt_secret
 
 # .env file for Product Service
 PORT=4001
-MONGO_URI=mongodb://localhost:27017/productsdb
+MONGO_URI=mongodb://localhost:port/productsdb
 
 # .env file for Order Service
 PORT=4002
-MONGO_URI=mongodb://localhost:27017/ordersdb
-USER_SERVICE_URL=http://localhost:4000
-PRODUCT_SERVICE_URL=http://localhost:4001
+MONGO_URI=mongodb://localhost:port/ordersdb
+USER_SERVICE_URL=http://localhost:port
+PRODUCT_SERVICE_URL=http://localhost:port
 
 # .env file for Payment Service
 PORT=4003
-MONGO_URI=mongodb://localhost:27017/paymentsdb
-ORDER_SERVICE_URL=http://localhost:4002
+MONGO_URI=mongodb://localhost:port/paymentsdb
+ORDER_SERVICE_URL=http://localhost:port
 .gitignore Example
 To ensure sensitive files are not committed to version control, the following items are included in the .gitignore file:
 
