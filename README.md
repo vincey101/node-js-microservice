@@ -71,19 +71,19 @@ To run each service, use `npm start` in the respective service directory:
 ```bash
 # Start User Service
 cd user-service
-npm start
+npm run dev
 
 # Start Product Service
 cd ../product-service
-npm start
+npm run dev
 
 # Start Order Service
 cd ../order-service
-npm start
+npm run dev
 
 # Start Payment Service
 cd ../payment-service
-npm start
+npm run dev
 
 
 Each service will run on its own port as defined in the .env files.
